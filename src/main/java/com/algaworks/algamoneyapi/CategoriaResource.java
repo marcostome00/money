@@ -47,7 +47,7 @@ public class CategoriaResource {
 		if(categoria.isPresent()) {
 			return ResponseEntity.ok().body(categoria.get());
 		}else {
-			return ResponseEntity.noContent().build();
+			return ResponseEntity.notFound().build();
 		}
 	}
 }
